@@ -48,5 +48,5 @@ def get_uf(datestring:str) -> Dict:
   
   return {
     'fecha': datestring,
-    'valor_UF': uf_value
+    'valor_uf': uf_value
   }

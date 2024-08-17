@@ -26,7 +26,7 @@ schema_view = get_schema_view(
       default_version='v1',
       description="API para la consulta del valor de la Unidad de Fomento (UF) de Chile",
       terms_of_service="https://www.google.com/policies/terms/",
-      contact=openapi.Contact(email="contact@snippets.local"),
+      contact=openapi.Contact(email="brunosarti.bs@gmail.com"),
       license=openapi.License(name="BSD License"),
    ),
    public=True,
