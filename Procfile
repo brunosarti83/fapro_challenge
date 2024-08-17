@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn faproscraper.wsgi
+web: python manage.py collectstatic && gunicorn faproscraper.wsgi
