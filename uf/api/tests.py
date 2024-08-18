@@ -27,8 +27,8 @@ class SingleDateUFTest(APITestCase):
 
         for case in test_cases:
             with self.subTest(case=case):
-                url = reverse('uf_month_view')
-                response = self.client.get(f"{url}?mes={case['month']}&anio={case['year']}")
+                url = reverse('uf_month_view', kwargs={'mes': case['month'], 'anio': case['year']})
+                response = self.client.get(url)
                 self.assertEqual(response.status_code, status.HTTP_200_OK)
                 self.assertEqual(response.data[case['index']]['fecha'], case['date'])
                 self.assertEqual(response.data[case['index']]['valor_uf'], case['uf_value'])

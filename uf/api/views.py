@@ -12,9 +12,7 @@ def uf_single_date_view(request, fecha):
         return Response({'error': str(e)}, status=400)
     
 @api_view(['GET'])
-def uf_month_view(request):
-    mes = request.GET.get('mes')
-    anio = request.GET.get('anio')
+def uf_month_view(request, mes, anio):
     try:
         processed_data = get_uf_month(month=mes, year=anio)
         return Response(processed_data, status=200)
