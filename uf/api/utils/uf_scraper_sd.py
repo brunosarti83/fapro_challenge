@@ -6,7 +6,9 @@ from bs4 import BeautifulSoup
 
 
 def get_uf(datestring:str) -> Dict:
-  
+  '''
+  Obtiene UF del dia solicitado.
+  '''
   try:
     date = datetime.strptime(datestring, '%d-%m-%Y')
   except ValueError:
