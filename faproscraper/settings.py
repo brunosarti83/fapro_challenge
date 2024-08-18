@@ -152,3 +152,4 @@ environment_flag = os.environ.get('FLAG')
 if environment_flag == 'PRODUCTION':
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    
