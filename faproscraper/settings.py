@@ -145,4 +145,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
 CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*']
-CORS_ALLOWED_ORIGINS = ['*']
+
+CORS_ALLOW_ALL_ORIGINS = True
