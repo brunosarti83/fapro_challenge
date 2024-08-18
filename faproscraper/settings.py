@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG') == 'True'
 
-ALLOWED_HOSTS = ['localhost', 'web-production-909c.up.railway.app']
+ALLOWED_HOSTS = ['localhost', '.railway.app', '.vercel.app']
 
 
 # Application definition
