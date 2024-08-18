@@ -49,8 +49,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -147,3 +147,5 @@ AUTH_USER_MODEL = 'users.User'
 CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*']
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+SECURE_SSL_REDIRECT = True
